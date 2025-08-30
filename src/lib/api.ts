@@ -1,9 +1,11 @@
-// /frontend/src/lib/api.ts (Atualizado)
+// /frontend/src/lib/api.ts
 
 import axios from 'axios';
 
+const baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3333/api';
+
 export const api = axios.create({
-  baseURL: 'http://localhost:3333/api',
+  baseURL: baseURL,
 });
 
 // Interceptor: Roda antes de CADA requisição
