@@ -1,0 +1,17 @@
+/* /frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globais para replicar o fundo da página do ClickUp */
+body {
+  @apply bg-clickup-bg text-clickup-text-dark font-sans;
+}
+
+/* Opcional: Gradiente de fundo mais complexo se necessário */
+/* .clickup-gradient-bg {
+  background-image: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
